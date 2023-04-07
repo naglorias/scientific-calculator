@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Scientific Calculator</title>
+</head>
+
+<body>
+    <div class="container-lg">
+        <h1 class="text-center text-danger-emphasis">Scientific Calculator</h1>
+        <div class="frame mt-5 m-auto">
+            <div class="grid">
+                <div class="row bg-dark pt-2">
+                    <div class="col-12">
+                        <input type="text" id="output"
+                            class="input-group-lg w-100 p-3 m-auto border border-3 border-dark-subtle bg-light"
+                            placeholder="0" disabled>
+                    </div>
+                </div>
+                <div class="row bg-dark">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col"><button value="(" onclick="checkValue(this)">(</button></div>
+                            <div class="col"><button value=")" onclick="checkValue(this)">)</button></div>
+                            <div class="col"><button value="%" onclick="percentage()">%</button></div>
+                            <div class="col"><button value="ac" onclick="clearValue()">Ac</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><button value="7" onclick="checkValue(this)">7</button></div>
+                            <div class="col"><button value="8" onclick="checkValue(this)">8</button></div>
+                            <div class="col"><button value="9" onclick="checkValue(this)">9</button></div>
+                            <div class="col"><button value="/" onclick="checkValue(this)">÷</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><button value="4" onclick="checkValue(this)">4</button></div>
+                            <div class="col"><button value="5" onclick="checkValue(this)">5</button></div>
+                            <div class="col"><button value="6" onclick="checkValue(this)">6</button></div>
+                            <div class="col"><button value="*" onclick="checkValue(this)">*</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><button value="1" onclick="checkValue(this)">1</button></div>
+                            <div class="col"><button value="2" onclick="checkValue(this)">2</button></div>
+                            <div class="col"><button value="3" onclick="checkValue(this)">3</button></div>
+                            <div class="col"><button value="-" onclick="checkValue(this)">-</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><button value="0" onclick="checkValue(this)">0</button></div>
+                            <div class="col"><button value="." onclick="checkValue(this)">.</button></div>
+                            <div class="col"><button value="=" onclick="equal()">=</button></div>
+                            <div class="col"><button value="+" onclick="checkValue(this)">+</button></div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col"><button onclick="sinMethod()">sin</button></div>
+                            <div class="col"><button onclick="cosMethod()">cos</button></div>
+                            <div class="col"><button onclick="tanMethod()">tan</button></div>
+                            <div class="col"><button onclick="piMethod()">π</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><button onclick="checkValue(this)" value="**">x&#x207F;</button></div>
+                            <div class="col"><button onclick="powerSquareMethod()">x&#xb2;</button></div>
+                            <div class="col"><button onclick="cubeMethod()">x&#xb3;</button></div>
+                            <div class="col"><button onclick="fractionMethod()">1&#x2044;x</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><button onclick="exponentMethod()">exp</button></div>
+                            <div class="col"><button onclick="logMethod()">log</button></div>
+                            <div class="col"><button onclick="truncationMethod()">trunc</button></div>
+                            <div class="col"><button onclick="radianMethod()">Rad</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><button onclick="coshMethod()">cosh</button></div>
+                            <div class="col"><button onclick="sinhMethod()">sinh</button></div>
+                            <div class="col"><button onclick="tanhMethod()">tanh</button></div>
+                            <div class="col"><button onclick="log2Method()">log2</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><button onclick="squareRootMethod()">&#x221A;x</button></div>
+                            <div class="col"><button onclick="cubeRootMethod()">&#x221B;x</button></div>
+                            <div class="col"><button onclick="fourthRootMethod()">&#x221C;x</button></div>
+                            <div class="col"><button onclick="undoValue()"><i class="bi bi-x-circle-fill"></i></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
+</html>
